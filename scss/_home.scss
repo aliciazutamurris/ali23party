@@ -1,0 +1,27 @@
+.home{
+    min-height: 100vh;
+    &__block{
+        margin: auto;
+        margin-top: 19%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        font-size: 65px;
+        line-height: 72px;
+        font-weight: 200;
+        &--FrontDev{
+            color: $mainColor;
+            font-weight: 300;
+        }
+    }
+    &__logo{
+        width: 190px;
+        max-width: 190px;
+        transition: $hoverTransition;
+        &:hover{
+            filter: $filterMainColor;
+        }
+    }
+}

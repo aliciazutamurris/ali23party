@@ -1,0 +1,52 @@
+.skills{
+    min-height: 390px; 
+    text-align: $textAlign;
+    &__block{
+        margin-top: -80px;
+    }
+    &__title{
+        font-size: $fsTitle;
+        font-weight: $fwTitle;
+    }
+    i{
+        font-size: 85px;
+    }
+    &__container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 50px;    
+        background-color: $bgColor;
+        padding: 25px 0;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: $hoverTransition;
+        }
+    }
+    &__iconContainers{
+        text-align: center;
+        &:hover{
+            color: $mainColor;
+        }
+        p{
+            font-size: 13px;
+            margin-top: 4px;
+            margin-bottom: 0;            
+        }
+    }
+}
+@media (max-width: 768px) {
+    .skills{
+        &__block{
+            margin-top: -20px;
+        }
+    }
+}
+@media (max-width: 396px) {
+    .skills{
+        &__container{
+            column-gap: 10px;
+        }
+    }
+}
