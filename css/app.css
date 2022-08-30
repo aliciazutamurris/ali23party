@@ -14,13 +14,13 @@ html {
 
 /* heartbeat */
 .heartbeat {
-  animation: heartbeat 1s infinite alternate; }
+  animation: heartbeat 1.5s infinite alternate; }
 
 @keyframes heartbeat {
   to {
-    -webkit-transform: scale(1.1);
-    transform: scale(0.9);
-    text-transform: scale(0.9); } }
+    -webkit-transform: scale(1);
+    transform: scale(0.75);
+    text-transform: scale(0.75); } }
 
 /* *{
     outline: 1px solid #ff009926;
@@ -54,7 +54,7 @@ html {
 
 /* ---- particles.js container ---- */
 #particle {
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   /* position: absolute; */
   top: 0;
@@ -269,6 +269,8 @@ header a {
   font-size: 65px;
   line-height: 72px;
   font-weight: 200;
+  color: white;
+  text-align: center;
 }
 
 .home__text--FrontDev {
@@ -444,6 +446,7 @@ header a {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
+  color: white;
 }
 
 .about__text {
@@ -837,7 +840,7 @@ header a {
   position: relative;
   height: 19vh;
   text-align: center;
-  background-color: #91919157;
+  background-color: #ffffff7f;
 }
 
 .footer a {
